@@ -1,0 +1,16 @@
+{
+    "$schema": "https://json.schemastore.org/eslintrc",
+    "env": {
+        "es2021": true,
+        "node": true
+    },
+    "extends": ["eslint:recommended", "prettier"],
+    "ignorePatterns": ["dist/", "node_modules/", ".yarn/"],
+    "overrides": [{ "files": ["**/*.js"] }],
+    "parser": "@babel/eslint-parser",
+    "root": true,
+    "rules": {
+        "no-console": "warn",
+        "no-control-regex": "off"
+    }
+}
